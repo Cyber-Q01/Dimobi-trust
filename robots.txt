@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+Host: https://www.dimobitrust.org.uk
+Sitemap: https://www.dimobitrust.org.uk/sitemap.xml
