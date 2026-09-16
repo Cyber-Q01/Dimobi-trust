@@ -165,4 +165,8 @@ header > div > div:nth-child(2) > #mobile-nav > div {
 #mobile-nav div.grid { position: static !important; transform: none !important; }
 </style>
 <script id="nav-redesign-script">(function(){var u=function(){document.body.classList.toggle("nav-mini",window.scrollY>44)};u();window.addEventListener("scroll",u,{passive:true});})();</script>
+<style id="about-cleanup">
+/* 3) remove the 4-card About Us grid (Founder / Trustees / Autism & Learning Disabilities / Our Team) */
+section[class*="bg-sand"][class*="text-ink"] { display: none !important; }
+</style>
 </body></html>
