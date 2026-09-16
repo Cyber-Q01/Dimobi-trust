@@ -93,23 +93,46 @@ header a[class*="h-16 flex-none"] {
   transition: height .28s ease;
 }
 /* --- desktop links on berry --- */
-header nav[aria-label="Primary"] a,
-header nav[aria-label="Primary"] a span,
-header nav[aria-label="Primary"] svg {
+header nav[aria-label="Primary"] > ul > li > a,
+header nav[aria-label="Primary"] > ul > li > a span,
+header nav[aria-label="Primary"] > ul > li > a svg {
   color: #fff !important;
   stroke: #fff;
 }
-header nav[aria-label="Primary"] a {
+header nav[aria-label="Primary"] > ul > li > a {
   border-radius: 999px;
 }
-header nav[aria-label="Primary"] a:hover {
+header nav[aria-label="Primary"] > ul > li > a:hover {
   background: rgba(255,255,255,.14) !important;
 }
-header nav[aria-label="Primary"] a[class*="bg-berry-50"] {
+header nav[aria-label="Primary"] > ul > li > a[class*="bg-berry-50"] {
   background: rgba(255,255,255,.2) !important;
 }
-header nav[aria-label="Primary"] a svg {
+header nav[aria-label="Primary"] > ul > li > a svg {
   color: rgba(255,255,255,.8) !important;
+}
+/* menu dropdown content keeps its light panel styling */
+header nav[aria-label="Primary"] li div[class*="top-full"] a {
+  color: rgb(38 28 20 / 1) !important;
+}
+header nav[aria-label="Primary"] li div[class*="top-full"] a:hover {
+  background: #fdf2e2 !important;
+}
+/* Donate can never be invisible: berry text on white, everywhere in header */
+header a[href="/donate/"],
+#mobile-nav a[href="/donate/"] {
+  background: #fff !important;
+  color: #8a4f00 !important;
+}
+header a[href="/donate/"]:hover,
+#mobile-nav a[href="/donate/"]:hover {
+  background: #fff3dd !important;
+  color: #7a4600 !important;
+}
+header a[href="/donate/"] svg,
+#mobile-nav a[href="/donate/"] svg {
+  color: #8a4f00 !important;
+  fill: #8a4f00 !important;
 }
 /* --- buttons --- */
 header a[class*="border-2"][href="/volunteer/"] {
