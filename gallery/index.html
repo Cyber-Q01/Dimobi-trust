@@ -195,6 +195,13 @@ header > div > div:nth-child(2) > #mobile-nav > div {
   color: rgba(255,255,255,.85) !important;
 }
 #mobile-nav ul ul a.text-berry-700 { color: #ffdf9e !important; }
+
+/* drawer CTA buttons: keep Donate = white pill with berry text (beat the ID rule) */
+#mobile-nav a[class*="bg-berry-700"] {
+  background: #fff !important;
+  color: #8a4f00 !important;
+  box-shadow: 0 8px 20px -8px rgba(0,0,0,.3);
+}
 /* nested expand panels must NOT inherit drawer positioning */
 #mobile-nav div.grid { position: static !important; transform: none !important; }
 </style>
